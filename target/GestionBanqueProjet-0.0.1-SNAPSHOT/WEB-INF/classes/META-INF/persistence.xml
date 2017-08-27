@@ -1,0 +1,26 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<persistence-unit name="PU_GBP" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.formation.gbp.entity.Client</class>
+		<class>com.formation.gbp.entity.Compte</class>
+		<class>com.formation.gbp.entity.CompteCourant</class>
+		<class>com.formation.gbp.entity.CompteEpargne</class>
+		<class>com.formation.gbp.entity.Employe</class>
+		<class>com.formation.gbp.entity.Groupe</class>
+		<class>com.formation.gbp.entity.Operation</class>
+		<class>com.formation.gbp.entity.Retrait</class>
+		<class>com.formation.gbp.entity.Versement</class>
+		<properties>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.connection.password" value="" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/gestionbanqueprojet" />
+			<property name="hibernate.max_fetch_depth" value="3" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
