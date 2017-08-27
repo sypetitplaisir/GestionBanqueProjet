@@ -1,7 +1,7 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence"
 	version="1.0">
 	<persistence-unit name="PU_GBP" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistence</provider>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>com.formation.gbp.entity.Client</class>
 		<class>com.formation.gbp.entity.Compte</class>
 		<class>com.formation.gbp.entity.CompteCourant</class>
